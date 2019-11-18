@@ -23,7 +23,6 @@ move();
 
 
 function checkStairs(){
-	move();
 	turnLeft();
 	move();
 	turnRight();
@@ -32,13 +31,50 @@ function checkStairs(){
 		move();
 		turnAround();
 	}
-	climbStairs();
+	
+}
+
+
+ function descendStairsOneAndThree(){
+	move();
+	turnRight();
+	move();
+	repeat(1){
+		turnLeft();
+		move();
+		turnRight();
+		move();
+	}
+	turnLeft();
+}
+
+function descendStairsTwo(){
+	move();
+	turnRight();
+	move();
+	repeat(3){
+	turnLeft();
+	move();
+	turnRight();
+	move();
+	}
+	turnLeft();
 }
 
 
 
-
 function Solve(){
+	move();
 	checkStairs();
 	climbStairs();
+	descendStairsOneAndThree();
+	checkStairs();
+	climbStairs();
+	descendStairsTwo();
+	move();
+	checkStairs();
+	climbStairs();
+	descendStairsOneAndThree();
+	move();
+	checkStairs();
 }
