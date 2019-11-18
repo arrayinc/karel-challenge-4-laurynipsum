@@ -9,6 +9,18 @@ it should be able to scale a molehill or Mount Everest.
 */
 import "turns";
 
+function climbStairs(){
+move();
+	while(frontIsBlocked()){
+	turnLeft();
+	move();
+	turnRight();
+	move();
+	}
+	putBeeper();
+}
+
+
 
 function checkStairs(){
 	move();
@@ -28,4 +40,5 @@ function checkStairs(){
 
 function Solve(){
 	checkStairs();
+	climbStairs();
 }

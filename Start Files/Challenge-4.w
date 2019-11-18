@@ -28,6 +28,6 @@ Wall: (17, 3) SOUTH
 Wall: (18, 2) WEST
 Wall: (18, 2) SOUTH
 Wall: (19, 1) WEST
-Karel: (19, 1) EAST
+Karel: (1, 1) EAST
 BeeperBag: 3
 Speed: 0.00
